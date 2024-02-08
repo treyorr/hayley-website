@@ -1,4 +1,9 @@
+'use client'
+ 
+import { usePathname } from 'next/navigation'
+
 export default function NavBar() {
+    const pathname = usePathname()
     return (
         <div className='navbar bg-base-100'>
                 <div className='navbar-start'>
@@ -44,24 +49,24 @@ export default function NavBar() {
                         </li>
                         </ul>
                     </div>
-                    <a className='btn btn-ghost text-xl'>Hayley Ellis</a>
+                    <a href="/" className='btn btn-ghost text-xl text-black'>Hayley Ellis</a>
                 </div>
                 <div className='navbar-center hidden lg:flex'>
                     <ul className='menu menu-horizontal px-1'>
                         <li>
-                            <a>About Me</a>
+                            <a href="/about" className={pathname == "/about" ? "bg-primary text-white" : "text-black"}>About Me</a>
                         </li>
                         <li>
-                            <a>Education</a>
+                        <a href="/education" className={pathname == "/education" ? "bg-primary text-white" : "text-black"}>Education</a>
                         </li>
                         <li>
-                            <a>Work</a>
+                        <a href="/work" className={pathname == "/work" ? "bg-primary text-white" : "text-black"}>Work</a>
                         </li>
                         <li>
-                            <a>Extracurriculars</a>
+                            <a href="/extracurriculars" className={pathname == "/extracurriculars" ? "bg-primary text-white" : "text-black"}>Extracurriculars</a>
                         </li>
                         <li>
-                            <a>Awards</a>
+                        <a href="/awards" className={pathname == "/awards" ? "bg-primary text-white" : "text-black"}>Awards</a>
                         </li>
                     </ul>
                 </div>
