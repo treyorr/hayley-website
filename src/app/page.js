@@ -34,7 +34,7 @@ export default function Home() {
                     enterTo='opacity-100'
                 >
                     <div className='chat chat-start pt-4'>
-                        <div className='chat-bubble chat-bubble-info'>
+                        <div className='chat-bubble chat-bubble-info  shadow-xl'>
                             <div className='text-white font-semibold text-2xl'>
                                 Hi, I&apos;m Hayley.
                             </div>
@@ -48,7 +48,7 @@ export default function Home() {
                     enterTo='opacity-100'
                 >
                     <div className='chat chat-start pt-4'>
-                        <div className='chat-bubble chat-bubble-info'>
+                        <div className='chat-bubble chat-bubble-info  shadow-xl'>
                             <div className='text-white font-semibold text-2xl'>
                                 I&apos;m an aspiring forensic pathologist.
                             </div>
@@ -62,7 +62,7 @@ export default function Home() {
                     enterTo='opacity-100'
                 >
                     <div className='chat chat-start pt-4'>
-                        <div className='chat-bubble chat-bubble-info'>
+                        <div className='chat-bubble chat-bubble-info  shadow-xl'>
                             <div className='text-white font-semibold text-2xl'>
                                 Welcome to my personal website.
                             </div>
