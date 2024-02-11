@@ -71,7 +71,7 @@ export default function NavBar() {
                     </ul>
                 </div>
                 <div className='navbar-end'>
-                    <a className='btn'>Button</a>
+                    <a className='btn btn-primary'>Contact Me!</a>
                 </div>
             </div>
     );

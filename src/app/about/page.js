@@ -9,11 +9,8 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div
-            className='flex flex-col md:flex-row'
-            style={{ height: `calc(100vh - 72px)` }}
-        >
-            <div className='md:w-1/2 md:pl-10 pt-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4'>
+            <div className='w-full md:pl-10 pt-10'>
                 <div class='card lg:card-side bg-primary shadow-2xl'>
                     <figure className='h-full'>
                         <Image
@@ -35,17 +32,17 @@ export default function About() {
                             foresic pathologist.
                         </div>
                         <div className='card-actions align-bottom w-full justify-end'>
-                            <Link href='/education' className="inline-block">
+                            <Link href='/education' className='inline-block'>
                                 <button className='btn btn-secondary w-full relative mt-4 -px-4 w-auto h-auto bottom-1 right-1'>
                                     Click here to see what I've been learning!
                                 </button>
                             </Link>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div
-                className='md:w-1/2'
+                className='w-full'
                 style={{
                     display: "flex",
                     justifyContent: "top",
