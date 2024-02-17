@@ -11,7 +11,7 @@ export default function About() {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4'>
             <div className='w-full md:pl-10 pt-10'>
-                <div class='card lg:card-side bg-primary shadow-2xl'>
+                <div className='card lg:card-side bg-primary shadow-2xl'>
                     <figure className='h-full'>
                         <Image
                             className='object-cover w-9/12 h-3/4 pt-4 md:pl-4'

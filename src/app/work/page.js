@@ -13,7 +13,7 @@ export default function Work() {
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4'>
-            <div className='w-full 2xl:w-2/3 md:p-4 pt-4 pl-4'>
+            <div className='w-full 2xl:w-2/3 md:p-4 pt-4 px-2'>
                 <ul className='timeline w-auto timeline-snap-icon max-md:timeline-compact timeline-vertical'>
                     <li>
                         <div className='timeline-middle'>
@@ -64,7 +64,7 @@ export default function Work() {
                                 />
                             </svg>
                         </div>
-                        <div className='timeline-end mb-10'>
+                        <div className='timeline-end md:mb-10'>
                             <time className='font-mono italic'>
                                 2023 - 2024
                             </time>
