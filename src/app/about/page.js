@@ -20,21 +20,24 @@ export default function About() {
                         />
                     </figure>
                     <div className='card-body h-full w-full'>
-                        <h2 className='card-title  md:-ml-8 '>I'm Hayley!</h2>
+                        <h2 className='card-title  md:-ml-8 '>
+                            I&apos;m Hayley!
+                        </h2>
                         <div className='card-paragraph md:-ml-8 overflow-auto'>
-                            I'm currently a junior at the University of Central
-                            Florida majoring in Health Sciences - Pre-clinical.
-                            Since a very young age I've known I wanted to pursue
-                            a career in medicine and as I gained an interest in
-                            the field of forensics. I have dedicated myself to
-                            learning as much about the human body as I can with
-                            the goal of attending medical school and becoming a
-                            foresic pathologist.
+                            I&apos;m currently a junior at the University of
+                            Central Florida majoring in Health Sciences -
+                            Pre-clinical. Since a very young age I&apos;ve known
+                            I wanted to pursue a career in medicine and as I
+                            gained an interest in the field of forensics. I have
+                            dedicated myself to learning as much about the human
+                            body as I can with the goal of attending medical
+                            school and becoming a foresic pathologist.
                         </div>
                         <div className='card-actions align-bottom w-full justify-end'>
                             <Link href='/education' className='inline-block'>
-                                <button className='btn btn-secondary w-full relative mt-4 -px-4 w-auto h-auto bottom-1 right-1'>
-                                    Click here to see what I've been learning!
+                                <button className='btn btn-secondary w-full relative mt-4 px-2  h-auto bottom-1 right-1'>
+                                    Click here to see what I&apos;ve been
+                                    learning!
                                 </button>
                             </Link>
                         </div>
