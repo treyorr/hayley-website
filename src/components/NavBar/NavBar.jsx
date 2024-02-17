@@ -33,19 +33,19 @@ export default function NavBar() {
                             className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'
                         >
                             <li>
-                            <a>About Me</a>
+                            <a href="/about">About Me</a>
                         </li>
                         <li>
-                            <a>Education</a>
+                            <a href="/education">Education</a>
                         </li>
                         <li>
-                            <a>Work</a>
+                            <a href="/work">Work</a>
                         </li>
                         <li>
-                            <a>Extracurriculars</a>
+                            <a href="/extracurriculars">Extracurriculars</a>
                         </li>
                         <li>
-                            <a>Awards</a>
+                            <a href="/awards">Awards</a>
                         </li>
                         </ul>
                     </div>
