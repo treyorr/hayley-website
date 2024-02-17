@@ -6,6 +6,8 @@ import { Rose } from "../../components/Rose/Rose";
 import Image from "next/image";
 import hayleyPic from "../../../public/Hayley.png";
 import Link from "next/link";
+import { Browser } from "tabler-icons-react";
+import { BrowserView } from "react-device-detect";
 
 export default function About() {
     return (
@@ -53,22 +55,24 @@ export default function About() {
                     flexGrow: 1,
                 }}
             >
-                <Canvas>
-                    <Suspense fallback={null}>
-                        <PerspectiveCamera
-                            makeDefault
-                            position={[0, 300, 25]}
-                        />
-                        <ambientLight intensity={5} />
-                        <pointLight
-                            position={[0, 0, 0]}
-                            intensity={800}
-                            color='#fff'
-                        />
-                        <OrbitControls enableZoom={false} />
-                        <Rose />
-                    </Suspense>
-                </Canvas>
+                <BrowserView>
+                    <Canvas>
+                        <Suspense fallback={null}>
+                            <PerspectiveCamera
+                                makeDefault
+                                position={[0, 300, 25]}
+                            />
+                            <ambientLight intensity={5} />
+                            <pointLight
+                                position={[0, 0, 0]}
+                                intensity={800}
+                                color='#fff'
+                            />
+                            <OrbitControls enableZoom={false} />
+                            <Rose />
+                        </Suspense>
+                    </Canvas>
+                </BrowserView>
             </div>
         </div>
     );

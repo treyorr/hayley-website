@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Model } from "../../public/Micro";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Transition } from "@headlessui/react";
+import { BrowserView } from "react-device-detect";
 
 export default function Home() {
     const [isShowing1, setIsShowing1] = useState(false);
@@ -79,6 +80,7 @@ export default function Home() {
                     flexGrow: 1,
                 }}
             >
+                <BrowserView >
                 <Canvas>
                     <Suspense fallback={null}>
                         <PerspectiveCamera makeDefault position={[0, 0, 100]} />
@@ -92,6 +94,7 @@ export default function Home() {
                         <Model />
                     </Suspense>
                 </Canvas>
+                </BrowserView>
             </div>
         </div>
     );

@@ -77,7 +77,7 @@ export default function Education() {
                         <input
                             type='checkbox'
                             id='toggle'
-                            className='peer'
+                            className='peer w-full'
                             checked={dsChecked}
                             onChange={dsHandleChange}
                         />
